@@ -14,6 +14,7 @@ def load_library(english_emoticons) #load_library loads the emoticons.yml file, 
     new_hash['get_emoticon'][value[0]] = emo[key][1]
     new_hash['get_meaning'][value[1]] = key
   end
+  new_hash
 end
 
 def get_japanese_emoticon(emofile,emo) 
