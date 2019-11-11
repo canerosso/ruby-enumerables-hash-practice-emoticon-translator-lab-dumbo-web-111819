@@ -1,9 +1,9 @@
 # require modules here
 require "yaml"
 
-def load_library(file)
+def load_library(emofile)
   # code goes here
-   emo = YAML.load_file(file)
+   emo = YAML.load_file(emofile)
   
   new_hash = {
     'get_meaning' => {},
