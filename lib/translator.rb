@@ -1,11 +1,11 @@
 # require modules here
 require "yaml"
 
-def load_library(emofile) #load_library loads the emoticons.yml file.
+def load_library(english_emoticons) #load_library loads the emoticons.yml file, which has the "english emoticons"
   # code goes here
-   emo = YAML.load_file(emofile)
+   emo = YAML.load_file(english_emoticons) #extracting the emoticons from the file
   
-  new_hash = {
+  new_hash = {             #creating a hash to store the meaning and emoticon symbols
     'get_meaning' => {},
     'get_emoticon' => {}
   }
