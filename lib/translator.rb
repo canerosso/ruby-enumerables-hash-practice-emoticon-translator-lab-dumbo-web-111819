@@ -16,7 +16,10 @@ def load_library(emofile) #load_library loads the emoticons.yml file.
   end
 end
 
-def get_japanese_emoticon(emofile,emo)
+def get_japanese_emoticon(emofile,emo) 
+#takes a traditional Western emoticon, e.g., :), and translates it to its Japanese version
+#relies on load_library to work
+
   # code goes here
   result = load_library(emofile)['get_emoticon'][emo]
   result ? result : "Sorry, that emoticon was not found"
